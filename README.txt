@@ -1,4 +1,4 @@
-👾欢迎使用pencilUIos👾
+👾欢迎使用pencilos👾
 这个系统是基于liunx内核制作的开源图形化操作系统
 这个系统适用于PC，树莓派等硬件设备
 如果您是一个小白
@@ -26,6 +26,8 @@ linux/
 ├── security/  # 安全模块
 ├── sound/     # 音频子系统
 └── tools/     # 开发工具
+如果您想基于pencilOS制作您的专属操作系统，请标注出处
+
 二.了解命令
 因为pencilUIos是基于liunx制作的，所以命令和liunx相同
 在启动器在找到终端就可以运行命令
