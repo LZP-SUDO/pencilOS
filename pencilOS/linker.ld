@@ -20,4 +20,7 @@ SECTIONS {
         *(.comment)
         *(.eh_frame)
     }
+   .multiboot : {
+        *(.multiboot)
+    }
 }
