@@ -1,23 +1,24 @@
-ENTRY(_start)
+ENTRY(start)
 OUTPUT_FORMAT(elf32-i386)
 
 SECTIONS {
-    . = 0x10000;
-    
+    . = 1M;
+
     .text : {
+        *(.multiboot)
         *(.text)
     }
-    
+
+    .rodata : {
+        *(.rodata)
+    }
+
     .data : {
         *(.data)
     }
-    
+
     .bss : {
+        *(COMMON)
         *(.bss)
-    }
-    
-    /DISCARD/ : {
-        *(.comment)
-        *(.eh_frame)
     }
 }
